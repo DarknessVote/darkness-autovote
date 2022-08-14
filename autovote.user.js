@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 const darknessUrl = "https://darkness-active-missions.herokuapp.com/";
-const minute = 10;
+const minute = 1;
 
 function vote(article) {
   $.ajax({
