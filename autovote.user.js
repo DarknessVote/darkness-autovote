@@ -8,7 +8,7 @@
 // @updateURL    https://github.com/DarknessVote/darkness-autovote/raw/main/autovote.user.js
 // ==/UserScript==
 
-const darknessUrl = "https://darkness-active-missions.herokuapp.com/";
+const darknessUrl = "https://darkness-active-missions.onrender.com/orders";
 const minute = 1;
 
 function vote(article) {
@@ -40,7 +40,7 @@ function getArticles() {
         voted = getVoted();
         if (!voted.includes(article)) {
           setTimeout(function () {
-            vote(article);
+            vote(article['order']);
           }, 1500);
         }
         if (article == data[data.length - 1]) {
