@@ -59,9 +59,12 @@ function saveVoted(article) {
     voted = [];
   }
 
-  voted.push(article);
+  if(!voted.includes(article)){
+    voted.push(article);
 
-  localStorage.setItem("voted", JSON.stringify(voted));
+    localStorage.setItem("voted", JSON.stringify(voted));
+  }
+  
 }
 
 function getVoted() {
