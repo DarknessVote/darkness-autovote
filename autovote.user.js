@@ -85,7 +85,7 @@ $(document).ready(function () {
   const lastVote = localStorage.getItem("darkness-last-vote");
   if (c() - lastVote >= minute * 60 * 1000) {
     getArticles();
-  }
+   }
 
   setInterval(() => {
     getArticles();
