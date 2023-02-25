@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         Darkness Autovote
-// @namespace    blank
-// @version      0.0.2
-// @description  Autovote for Darkness service
-// @author       Pablo http://github.com/pbl0
-// @match        *://*rivalregions.com/*
-// @updateURL    https://github.com/DarknessVote/darkness-autovote/raw/main/autovote.user.js
+// @name        Darkness-AutoVote
+// @namespace   https://pablobls.tech/
+// @match       *://*rivalregions.com/*
+// @author      pablo
+// @description Autovote for Darkness service
+// @version     0.0.1
+// @downloadURL https://github.com/DarknessVote/darkness-autovote/raw/main/autovote.user.js
 // ==/UserScript==
 
 const darknessUrl = "https://darkness-active-missions.onrender.com/orders";
@@ -64,7 +64,7 @@ function saveVoted(article) {
 
     localStorage.setItem("voted", JSON.stringify(voted));
   }
-  
+
 }
 
 function getVoted() {
