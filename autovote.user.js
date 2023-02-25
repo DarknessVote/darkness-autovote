@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Darkness Autovote
 // @namespace    blank
-// @version      0.0.1
+// @version      0.0.2
 // @description  Autovote for Darkness service
 // @author       Pablo http://github.com/pbl0
 // @match        *://*rivalregions.com/*
@@ -85,7 +85,7 @@ $(document).ready(function () {
   const lastVote = localStorage.getItem("darkness-last-vote");
   if (c() - lastVote >= minute * 60 * 1000) {
     getArticles();
-   }
+  }
 
   setInterval(() => {
     getArticles();
